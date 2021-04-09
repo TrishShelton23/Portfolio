@@ -1,10 +1,16 @@
 # Portfolio
 ## Front-End Web Development and Graphics Designer debut portfolio. 
 
-Web portfolio using framework, Bootstrap 4 and jQuery.
+Mockup and Prototype both created on Figma. Abstracted women created figma and edited on Photoshop  
+
+### Branding Structure
+
 
 ### Mockup
 <img src="images/website-images/mockup-portfolio-website.png" style="height:400px;">
 
-### Protype
-<img src="images/website-images/prototype-portfolio-website.png">
+### Prototype
+
+
+<img src="images/website-images/prototype-portfolio-website.png" style="height:620px;"></br>
+The project windows are functioned by jQuery, sliding up effect revealing software used to create application and/or included projects.
