@@ -4,6 +4,7 @@
 Web portfolio using framework, Bootstrap 4 and jQuery.
 
 ### Mockup
-<img src="images/website-images/mockup-portfolio-website.png" style="height:300px;">
+<img src="images/website-images/mockup-portfolio-website.png" style="height:400px;">
 
 ### Protype
+<img src="images/website-images/prototype-portfolio-website.png">
