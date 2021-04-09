@@ -1,4 +1,8 @@
 # Portfolio
 ## Front-End Web Development and Graphics Designer debut portfolio. 
 
-Web portfolio will use Bootstrap 4
+Web portfolio using framework, Bootstrap 4 and jQuery.
+
+### Mockup
+
+### Protype
