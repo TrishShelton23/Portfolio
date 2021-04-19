@@ -8,8 +8,13 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="index.js"></script>
   
 <style>
+  #welcome-page-slide {
+    width: 100%;
+    min-height:100vh; 
+  }
   li a{
     color:#000000;
     }
@@ -38,6 +43,15 @@
     transform: rotate(-200deg);
    
   }
+  #banner-pages-slides{
+    width: 100%;
+    min-height: 100vh;
+  }
+  @media only screen and (max-width:1110px) and (min-height:0px){
+    div.header-images-welcome{
+        display: none;
+    }
+  }
 
 </style>
   
@@ -63,43 +77,37 @@
     </header>
     
       <body>
+    <section class="banner-pages-slides">
           <!--Welcome-->
-          <section id="welcome" class="container-fluid " style="height:90vh; display:flex; align-items: center; justify-content: center;"> 
+        <div id="welcome-page-slide" class="container-fluid" >
             <div class="shapes-position-background-header">
               <div class="shaped-tan-abstract-background"></div>
               <div class="shaped-red-abstract-background"></div>
-           
           </div>
 
-            <div class="header-images-welcome ">
+            <div class="header-images-welcome">
               <img src="images/Logos/welcome-full-logo.png" alt="" title="" style="height: 400px;">
               <img src="images/women-abstract-image.png" alt="" title="" style="height: 370px; margin-left: -100px;">
-              <img src="" alt="" title="">
-
-              
+              <img src="" alt="" title="">        
             </div>
-          </section>
-
+        </div>
            
             <!--About Me-->
-          <section id="about-section" class="container-fluid" >
-            
-          <div id="about-me" class="container">
+ 
+        <div id="about-page-slide" class="container">
           <h2 class="" title="About Me">A little about me... </h2>
           <article>
             <p class="lead">Education at Erie Community College were I studied 
               <strong>Computer Informations Systems</strong>. Attended 10-week bootcamp at
               <strong>General Assembly</strong> <strong>for Front-End Web Development</strong> course.</p>
           </article>
-         
         </div>
-            </section>  
 
-            <section id="projects" class="container-fluid row" style="background-color:lavender">
-                
+    
+        <div id="projects-page-slide" class="container-fluid row" style="background-color:lavender">
               <h2 class="pb-4">projects.</h2>
-              <!--Single Projects-->
-            <div class="col-md" >
+
+            <div class="col-md">
               <h5>Building the Brand</h5>
               <dl>
                 <dt>Software Used:</dt>
@@ -120,32 +128,28 @@
             <div class="col-md" >
               <h5>Project 4</h5>
             </div>
-          </section>
+        </div>
 
-          <section id="contact-info" class="contact-info" >
-
-            <div id="contact"  class="contact">
-                <h2 title="Reaching Out">Contact Me</h2>
+        <div id="contact-page-slide"  class="col-md">
+            <h2 title="Reaching Out">Contact Me</h2>
                 <p><strong>Email: </strong>trisheia@icloud.com</p>
                 <p><strong>Phone #: </strong> (123) 456-7890</p>
                 <p><strong>Located In: </strong>Raleigh, NC</p>
-          </div>
-          
-          <div id="comments-area" class="comments-area">
+         
             <h2>Leave A Comment</h2>
-            <p> Thanks for your interest! If you have any questions, concerns, or comments
+                <p> Thanks for your interest! If you have any questions, concerns, or comments
               leave them here.</p>
-           
               <div class="textarea">
-                   <textarea id="comments-area" title="Leave A Comment"></textarea><br>
-                   <button class="btn btn-default " id="submit" title="Send Email" href="mailto:strish123@gmail.com">Submit</button>
+                <textarea id="comments-area" title="Leave A Comment"></textarea><br>
+                <button class="btn btn-default " id="submit" title="Send Email" href="mailto:strish123@gmail.com">Submit</button>
               </div>
-          </div>
-        
-        </section>
-        
+        </div>
+      </section>
       </body>
+    
     <footer class="container-fluid navbar pt-2 text-center" style="background-color:#EDEBE1;">
-          <p class="">© 2021 Trisheia Shelton  All Rights Reserved</p>
+          <p class="">© 2021 Trisheia Shelton  All Rights Reserved<br>
+          </p>
+
     </footer>
 </html>
