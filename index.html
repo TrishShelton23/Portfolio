@@ -11,10 +11,6 @@
     <script src="index.js"></script>
   
 <style>
-  #welcome-page-slide {
-    width: 100%;
-    min-height:100vh; 
-  }
   li a{
     color:#000000;
     }
@@ -41,17 +37,38 @@
     width: 700px;
     border-radius:;
     transform: rotate(-200deg);
-   
+  }
+  nav{
+    position: fixed;
   }
   #banner-pages-slides{
     width: 100%;
     min-height: 100vh;
   }
+  #welcome-page-slide-shape-background, #about-page-slide, #projects-page-slide, #contact-page-slide{
+    min-height:100vh;
+    width: 100%;
+  }
   @media only screen and (max-width:1110px) and (min-height:0px){
-    div.header-images-welcome{
-        display: none;
+    div.header-images-welcome, 
+    #nav-links-top{
+      display: none;
     }
   }
+  #welcome-page-slide-shape-background{
+    margin-top: 150px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+  }
+  #about-page-slide{
+    width:100%;
+    min-height: 100vh;
+    background-image:url(images/website-images/download.jpeg);
+    background-attachment: fixed;
+    transform-style: 200%;
+  }
+
 
 </style>
   
@@ -61,7 +78,7 @@
     <nav class="container-fluid navbar navbar-expand-sm pt-2" style="justify-content:space-between; background-color:#EDEBE1;">
       <a href="www.trisheiamoshaire.com" ><img class="" src="images/Logos/desktop-logo-navbar.png" alt="logo" style="height:35px"></a>
    
-    <ul class="nav justify-content-center" style="">
+    <ul id="nav-links-top" class="nav justify-content-center">
       <li class="nav-items"><a class="nav-link" href="#home-page">home.</a></li>
       <li class="nav-items"><a class="nav-link" href="#about-me-section">about me.</a></li>
       <li class="nav-items"><a class="nav-link" href="#my-work">my work.</a></li>
@@ -77,9 +94,9 @@
     </header>
     
       <body>
-    <section class="banner-pages-slides">
+    <section class="banner-pages-slides container-fluid">
           <!--Welcome-->
-        <div id="welcome-page-slide" class="container-fluid" >
+        <div id="welcome-page-slide-shape-background" class="welcome-page-slide-shape-background" >
             <div class="shapes-position-background-header">
               <div class="shaped-tan-abstract-background"></div>
               <div class="shaped-red-abstract-background"></div>
@@ -94,7 +111,7 @@
            
             <!--About Me-->
  
-        <div id="about-page-slide" class="container">
+        <div id="about-page-slide" class="about-page-slide container-fluid">
           <h2 class="" title="About Me">A little about me... </h2>
           <article>
             <p class="lead">Education at Erie Community College were I studied 
@@ -104,7 +121,7 @@
         </div>
 
     
-        <div id="projects-page-slide" class="container-fluid row" style="background-color:lavender">
+        <div id="projects-page-slide" class="projects-page-slide container-fluid row" style="background-color:lavender">
               <h2 class="pb-4">projects.</h2>
 
             <div class="col-md">
@@ -130,7 +147,7 @@
             </div>
         </div>
 
-        <div id="contact-page-slide"  class="col-md">
+        <div id="contact-page-slide"  class="contact-page-slide col-md">
             <h2 title="Reaching Out">Contact Me</h2>
                 <p><strong>Email: </strong>trisheia@icloud.com</p>
                 <p><strong>Phone #: </strong> (123) 456-7890</p>
