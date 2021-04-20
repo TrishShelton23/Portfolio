@@ -38,9 +38,6 @@
     border-radius:;
     transform: rotate(-200deg);
   }
-  nav{
-    position: fixed;
-  }
   #banner-pages-slides{
     width: 100%;
     min-height: 100vh;
@@ -56,17 +53,23 @@
     }
   }
   #welcome-page-slide-shape-background{
-    margin-top: 150px;
+    margin-top: 200px;
     display: flex;
     align-content: center;
     justify-content: center;
-  }
+    }
+    
   #about-page-slide{
     width:100%;
     min-height: 100vh;
-    background-image:url(images/website-images/download.jpeg);
-    background-attachment: fixed;
-    transform-style: 200%;
+    background:url(images/website-images/download.jpeg) no-repeat center ;
+    z-index: -1;
+  }
+  article{
+    background-color:#EDEBE1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
 
@@ -121,7 +124,7 @@
         </div>
 
     
-        <div id="projects-page-slide" class="projects-page-slide container-fluid row" style="background-color:lavender">
+        <div id="projects-page-slide" class="projects-page-slide container row" style="">
               <h2 class="pb-4">projects.</h2>
 
             <div class="col-md">
