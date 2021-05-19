@@ -1,1 +1,87 @@
-/* No CSS *//*# sourceMappingURL=styles.css.map */
+body {
+  background-color: #E1857F;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+a:hover {
+  color: #58555A;
+}
+
+.header-images-welcome {
+  position: absolute;
+}
+
+.shaped-red-abstract-background {
+  margin-top: -200px;
+  margin-left: 200px;
+  background: #E1857F;
+  height: 170px;
+  width: 500px;
+  -webkit-transform: rotate(20deg);
+          transform: rotate(20deg);
+}
+
+.shaped-tan-abstract-background {
+  margin-top: -10px;
+  margin-left: 150px;
+  background: #EACBA6;
+  height: 200px;
+  width: 700px;
+  -webkit-transform: rotate(-200deg);
+          transform: rotate(-200deg);
+}
+
+#banner-pages-slides {
+  width: 100%;
+  min-height: 100vh;
+}
+
+#welcome-page-slide-shape-background, #about-page-slide, #projects-page-slide, #contact-page-slide {
+  min-height: 100vh;
+  width: 100%;
+}
+
+@media only screen and (max-width: 1110px) and (min-height: 0px) {
+  div.header-images-welcome,
+  #nav-links-top {
+    display: none;
+  }
+}
+
+#welcome-page-slide-shape-background {
+  margin-top: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#about-page-slide {
+  width: 100%;
+  min-height: 100vh;
+  background: url(images/website-images/download.jpeg) no-repeat center;
+  z-index: -1;
+}
+
+article {
+  background-color: #EDEBE1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+/*# sourceMappingURL=styles.css.map */
